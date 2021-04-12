@@ -1,0 +1,220 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!--CSS-->
+<style>
+    body {
+        font-family: monospace;
+        background-color: #555E54;
+        color: black;
+    }
+    #navbar {
+        position: fixed;
+        min-width: 200px;
+        top: 0px;
+        left: 0px;
+        width: 100px;
+        height: 100%;
+        border-right: 4px solid;
+        border-color: black;
+    }
+    header {
+        color: black;
+        margin: 10px;
+        text-align: center;
+        font-size: 1.9em;
+        font-weight: bold;
+    }
+    #navbar ul {
+        padding: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    #navbar li {
+        border-top: 2px solid;
+        list-style: none;
+        position: relative;
+        width: 100%;
+        font-size: 1.3em;
+    }
+    #navbar a {
+        display: block;
+        padding: 10px 10px;;
+        text-decoration: none;
+        cursor: pointer;
+        color: black;
+        font-weight: bold;
+    }
+    #main-doc {
+        position: absolute;
+        margin-left: 200px;
+        padding: 20px;
+        margin-bottom: 110px;
+    }
+    #main-doc header {
+        text-align: left;
+        margin: 0px;
+    }
+    section article {
+        color: black;
+        margin: 15px;
+        font-size: 1.15em;
+    }
+    .packers {
+        color: #FFB612;
+        display: block;
+        text-align: left;
+        position: relative;
+        background-color: #203731;
+        border-radius: 5px;
+        padding: 1px;
+    }
+    .scoring {
+        color: white;
+        display: block;
+        text-align: left;
+        position: relative;
+        background-color: black;
+        border-radius: 5px;
+        padding: 1px;
+    }
+    @media only screen and (max-width: 815px) {
+    #navbar ul {
+        border: 1px solid;
+        height: 247px;
+    }
+    #navbar {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 300px;
+        border: none;
+        z-index: 1;
+        border-bottom: 4px solid;
+    }
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 300px;
+    }
+}
+</style>
+
+
+<!--HTML-->
+<title>Documentation Page</title>
+
+<nav id="navbar">
+  <header id="nav-header">Football: All you should know</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li><a class="nav-link" href="#Basics">Basics</a></li>
+    <li><a class="nav-link" href="#The_Field">The Field</a></li>
+    <li><a class="nav-link" href="#Teams">Teams</a></li>
+    <li><a class="nav-link" href="#Starting_the_game">Starting the game</a></li>
+    <li><a class="nav-link" href="#Scoring">Scoring</a></li>
+    <li><a class="nav-link" href="#Football_history">Football history</a></li>
+    <li><a class="nav-link" href="#NFL">NFL</a></li>
+    </header>
+</nav>
+
+<main id="main-doc">
+  <section id="Introduction" class="main-section">
+    <header class="header-section">Introduction</header>
+    <article>
+      <p>American football, referred to as football in the United States and Canada and also known as gridiron, is a team sport played by two teams of eleven players on a rectangular field with goalposts at each end.</p> 
+      
+      <p>The offense, the team with possession of the oval-shaped football, attempts to advance down the field by running with the ball or passing it, while the defense, the team without possession of the ball, aims to stop the offense's advance and to take control of the ball for themselves.</p>
+      
+      <p>The offense must advance at least ten yards in four downs or plays; if they fail, they turn over the football to the defense, but if they succeed, they are given a new set of four downs to continue the drive. Points are scored primarily by advancing the ball into the opposing team's end zone for a touchdown or kicking the ball through the opponent's goalposts for a field goal. The team with the most points at the end of a game wins.</p>
+    </article>
+  </section>
+  
+  <section id="Basics" class="main-section">
+    <header class="header-section">Basics</header>
+    <article>
+      <code><p>Football is a sport played by two teams of 11 players on a 120-yard, rectangular field with goal lines on each end. A football is an oval-like inflated ball usually made of cowhide or rubber.</p></code>
+
+      <p>The offense, or the team with control of the ball, attempts to advance the ball down the field by running or passing the ball, while the opposing team aims to stop their advance and tries to take control of the ball. The offense must advance at least 10 yards in four downs, or plays, or else they turn over the football to the opposing team; if they succeed, they are given a new set of four downs.</p> 
+
+      <p>The object of the game is for one team to outscore the other. This is accomplished by advancing the football down the field and scoring as many points as possible. Scoring can occur in the form of a touchdown, an extra point conversion, a two-point conversion, a field goal or a safety.</p> 
+
+      <p>The time on the clock for a football game is 60 minutes. The game is divided into two halves of 30 minutes and four quarters of 15 minutes. The average duration of a football game is three hours.</p>
+        
+   </article>
+  </section>
+  
+  <section id="The_Field" class="main-section">
+    <header class="header-section">The Field</header>
+    <article>
+      <p>The playing field is 100 yards long with a 10-yard end zone for each team. The field has stripes running the width of the field at 5-yard intervals. There are also shorter lines, called hash marks, marking each single yard interval down the field. The football field is 160-feet wide.</p>
+
+      <p>The spot where the end zone meets the playing field is referred to as the goal line. The goal line is the end zone, which is the same as saying the 0-yard mark. From there, numbers mark 10-yard intervals going up to the 50-yard line, which marks the center of the field. After reaching the 50-yard line, yardage markers descend every ten yards (40, 30, 20, 10) until they reach the opposite goal line.</p>
+    </article>
+  </section>
+  
+  <section id="Teams" class="main-section">
+    <header class="header-section">Teams</header>
+    <article>
+      <p>Football features two teams playing against each other. Each team is allowed to have eleven men on the field at any given time. More than 11 players on the field results in a penalty. Unlimited substitution is permitted, but players can only enter the field when the ball is dead and play is stopped.</p>
+
+      <p>Each team has offense players, defense players, and specialized players, called "special teams." If a team has possession of the ball, they are considered to be on the offense and use their offense players to attempt to run with the ball or pass the ball forward toward the opponent’s end zone. Meanwhile, the other team, considered to be on defense, will use their defense players to attempt to stop the other team from advancing the ball. If a kicking play is expected, the teams will use their special teams units.</p>
+    </article>
+  </section>
+  
+  <section id="Starting_the_game" class="main-section">
+    <header class="header-section">Starting the game</header>
+    <article>
+      <p>The game begins when one of the teams kicks off the football to the other. The captains from each team and the referee meet at the center of the field for a coin toss to determine which side is the kicking team.The winner of the coin toss has the option of starting the game by kicking the ball to the other team or receiving the kickoff from the other team, essentially deciding if they want to be offense first or defense.</p>
+
+      <p>The receiving team must catch the ball and try to advance the ball toward the opposite end of the field to the other team's end zone. The play, or down, ends when the ball goes down to the ground or the ball goes out of bounds. The place where the ball goes down becomes the line of scrimmage, and it is where the ball is placed for the start of the next play. The offense is given four attempts, or downs, to gain 10 yards or more. Upon achieving 10 yards, the offense is awarded four more attempts to achieve 10 or more yards and play continues like that until the offense scores or the defense regains possession of the ball.</p>
+    </article>
+  </section>
+  
+  <section id="Scoring" class="main-section">
+    <header class="header-section">Scoring</header>
+    <article>
+      <p>The biggest goal for the offense is to score a touchdown. To score a touchdown, a player must carry the ball across the opposition's goal line or catch a pass in the end zone. Once the ball crosses the plane of the goal line while it is in a player's possession, it is scored a touchdown. A touchdown is worth six points. The team scoring a touchdown is given the bonus of trying to add one or two more points. These are called extra-point conversion attempts.
+
+      <p>If a team elects to go for two extra points, they will line up at the two-yard line and make one attempt at either running or passing the ball into the end zone. If the team makes it, the team is awarded two points. If the team does not make it, then no extra points are awarded. The team can also elect to go for only one extra point by kicking the ball through the goal posts from the fifteen-yard line.</p>
+
+      <p>Field goals are another way for a team to score points in the game. A field goal is worth three points. A team in a fourth-down situation might decide to attempt a field goal, which means the team feels that its special teams' kicker is within a comfortable range of kicking the ball between the upright bars of the goal post in the opponent's end zone.</p> 
+
+      <p>A team can also pick up two points by tackling an opponent possessing the ball in the opponent's end zone. This is called a safety.</p>
+      <code class="title"><h3>A simple demonstration:</h3></code>
+      <code class="scoring"> 
+        <ul>
+          <li>Touchdown: 6 points</li>
+          <li>Extra Point: 1 point</li>
+          <li>2 point conversion</li>
+          <li>Field Goal: 3 points</li>
+          <li>Safety: 2 points</li>
+        </ul>
+      </code>
+    </article>
+  </section>
+  
+  <section id="Football_history" class="main-section">
+    <header class="header-section">Football history</header>
+    <article>
+      <p><code>American football evolved from the sports of soccer and rugby.</code> Rugby, like American football, is a sport where two competing teams vie for control of a ball, which can be kicked through a set of goalposts or run into the opponent's goal area to score points.</p>
+
+      <p>What is considered to be the first American football game was played on November 6, 1869, between Rutgers and Princeton, two college teams. They consisted of 25 players each and used a round ball that could not be picked up or carried. It could, however, be kicked or batted with the feet, hands, head or sides, with the objective being to advance it into the opponent's goal. Rutgers won the game 6–4. Collegiate play continued for several years with matches played using the rules of the host school. Representatives of Yale, Columbia, Princeton and Rutgers met on October 19, 1873, to create a standard set of rules for use by all schools. Teams were set at 20 players each, and fields of 400 by 250 feet (122 m × 76 m) were specified. Harvard abstained from the conference, as they favored a rugby-style game that allowed running with the ball. After playing McGill University using both Canadian and American rules, the Harvard players preferred the Canadian style of having only 11 men on the field, running the ball without having to be chased by an opponent, the forward pass, tackling, and using an oblong instead of a round ball.</p>
+
+      <p>An 1875 Harvard–Yale game played under rugby-style rules was observed by two Princeton athletes who were impressed by it. They introduced the sport to Princeton, a feat the Professional Football Researchers Association compared to "selling refrigerators to Eskimos". Princeton, Harvard, Yale, and Columbia then agreed to intercollegiate play using a form of rugby union rules with a modified scoring system. These schools formed the Intercollegiate Football Association, although Yale did not join until 1879. Yale player Walter Camp, now regarded as the "Father of American Football",secured rule changes in 1880 that reduced the size of each team from 15 to 11 players and instituted the snap to replace the chaotic and inconsistent scrum.</p>
+    </article>
+  </section>
+  
+  <section id="NFL" class="main-section">
+    <header class="header-section">NFL</header>
+    <article>
+      <p>The National Football League (NFL) is a professional American football league consisting of 32 teams, divided equally between the National Football Conference (NFC) and the American Football Conference (AFC). The NFL is one of the four major North American professional sports leagues, the highest professional level of American football in the world, the wealthiest professional sport league by revenue, and the sport league with the most valuable teams. The NFL's 17-week regular season runs from early September to late December, with each team playing 16 games and having one bye week. Following the conclusion of the regular season, seven teams from each conference (four division winners and three wild card teams) advance to the playoffs, a single-elimination tournament culminating in the Super Bowl, which is usually held on the first Sunday in February and is played between the champions of the NFC and AFC.</p>
+
+      <p>The NFL was formed in 1920 as the American Professional Football Association (APFA) before renaming itself the National Football League for the 1922 season. After initially determining champions through end-of-season standings, a playoff system was implemented in 1933 that culminated with the NFL Championship Game until 1966. Following an agreement to merge the NFL with the American Football League (AFL), the Super Bowl was first held in 1967 to determine a champion between the best teams from the two leagues and has remained as the final game of each NFL season since the merger was completed in 1970. Today, the NFL has the highest average attendance (67,591) of any professional sports league in the world and is the most popular sports league in the United States. The Super Bowl is also among the biggest club sporting events in the world, with the individual games accounting for many of the most watched television programs in American history and all occupying the Nielsen's Top 5 tally of the all-time most watched U.S. television broadcasts by 2015.</p>
+
+      <code class="packers">
+      <p>The Green Bay Packers hold the most combined NFL championships with 13, winning nine titles before the Super Bowl era and four Super Bowls afterwards. Since the creation of the Super Bowl, the Pittsburgh Steelers and New England Patriots both have the most championship titles at six.</p>
+        </article></code>
+  </section>

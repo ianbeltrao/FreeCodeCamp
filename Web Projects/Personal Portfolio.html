@@ -1,0 +1,207 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!--CSS-->
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+    body {
+        font-family: 'Nerko One', cursive;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    /*navbar*/
+    #navbar {
+        display: flex;
+        background-color: #FFB612;
+        position: fixed;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-bottom: 3px solid;
+        border-color: white;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+    nav li {
+        display: block;
+        margin: 0 30px 0 30px;
+        font-size: 1.5em;
+    }
+    a {
+        text-decoration: none;
+        color: #203731;
+    }
+    /*Welcome-section*/
+    .welcome-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #203731;
+        color: #FFB612;
+    }
+    #title {
+        font-size: 3em;
+        margin: 4px;
+    }
+    #description {
+        font-size: 1.5em;
+        margin: -15px;
+    }
+    /*project section*/
+    #projects {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #203731;
+        margin-top: -10px;
+        border-top: 3px solid;
+        border-color: white;
+        border-bottom: 3px solid;
+        border-color: white;
+    }
+    #project-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 200px;
+        grid-column-gap: 0;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        margin-top: 70px;
+        margin-bottom: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .project-img {
+        width: 350px;
+        height: 250px;
+    }
+    .project-tile {
+        background-color: #FFB612;
+        border: 8px solid;
+        border-color: white;
+        border-radius: 10px;
+        width: 350px;
+    }
+    #project-title {
+        color: #FFB612;
+        font-size: 2em;
+    }
+    .project-description {
+        font-size: 1.3em
+    }
+    #profile-link {
+        color: #203731;
+        background-color: #FFB612;
+        width: 70px;
+        height: 25px;
+        text-align: center;
+        display: inline-block;
+        padding: 1rem 1rem;
+        border-radius: 2px;
+        margin-left: 370px;
+        margin-top: -100px;
+    }
+    @media (max-width: 28.75em) {
+    #project-grid {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #profile-link {
+        margin-left: 50px;
+    }
+    }
+    /*Footer*/
+    footer {
+        font-family: arial;
+        text-align: center;
+        background-color: #FFB612;
+        color: #203731;
+        font-weight: bold;
+    }
+</style>
+
+
+<!--HTML-->
+<title>Personal Portifolio</title>
+
+
+<body>
+ <nav id="navbar">
+   <ul>
+     <li><a href="#welcome-section">About</a></li>
+     <li><a href="#projects">Projects</a></li>
+   </ul>
+ </nav>
+  
+ 
+   <section id="welcome-section" class="welcome-section">
+     <h1 id="title">Hi, I am Ian</h1>
+     <p id="description">a brazilian student</p>
+   </section>
+   <section id="projects">
+        <h1 id="project-title">Here are some of my web projects</h1>
+        <div id="project-grid">
+            <a 
+            id="project-tile"
+            href="https://codepen.io/ianbeltrao/full/XWKvxzz"
+            target="_blank"
+            class="project-tile">
+            <img
+            src="https://i.ibb.co/LZ58Z86/survey.png"
+            class="project-img"
+            alt="project-image"/>
+                <p class="project-description">Survey Form</P>
+            </a>
+            <a 
+            id="project-tile"
+            href="https://codepen.io/ianbeltrao/full/XWKvxzz"
+            target="_blank"
+            class="project-tile">
+            <img
+            src="https://i.ibb.co/5YC7yB0/tribute.png"
+            class="project-img"
+            alt="project-image"/>
+                <p class="project-description">Tribute Page</P>
+            </a>
+            <a 
+            id="project-tile"
+            href="https://codepen.io/ianbeltrao/full/XWKvxzz"
+            target="_blank"
+            class="project-tile">
+            <img
+            src="https://i.ibb.co/syLLL3P/Product-Landing-Page.png"
+            class="project-img"
+            alt="project-image"/>
+                <p class="project-description">Product Landing Page</P>
+            </a>
+            <a 
+            id="project-tile"
+            href="https://codepen.io/ianbeltrao/full/XWKvxzz"
+            target="_blank"
+            class="project-tile">
+            <img
+            src="https://i.ibb.co/0mvssny/documentation.png"
+            class="project-img"
+            alt="project-image"/>
+                <p class="project-description">Technical Documentation Page</P>
+            </a>
+            <a
+                id="profile-link"
+                href="https://www.freecodecamp.org/ianbeltrao"
+                target="_blank"
+                class="button">More</a>
+        </div>
+    </section>
+    <footer><span>This is not a real portfolio. Made for educational purposes only</span></footer>
+</body>
+     

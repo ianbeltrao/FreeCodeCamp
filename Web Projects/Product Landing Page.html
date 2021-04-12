@@ -1,0 +1,244 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!--CSS-->
+<style>
+    body {
+        font-family: "Noto Sans", sans-serif;
+        margin-left: 0px;
+        font-size: 1.1em;
+        background-color: #111010;
+        color: white;
+    }
+    header{
+        box-sizing: content-box;
+        display: flex;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        top: 0px;
+        justify-content: space-between;
+        border-bottom: 3px solid;
+        border-color: red;
+    }
+    header img {
+        width: 250px;
+        display: block;
+    }
+    header ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 25px;
+    }
+    header li {
+        list-style-type: none;
+        font-size: 1.1em;
+        height: 1.5em;
+        padding: 0px 20px 0px 2.5%;
+        white-space: nowrap;
+    }
+    #logo,
+    #nav-bar {
+        width: 40%;
+    }
+    .nav-link {
+        text-decoration-line: none;
+        color: #FF0000;
+    }
+    #brand {
+        margin-top: 100px;
+        text-align: center;  
+        margin-bottom: 70px;
+    }
+    #brand h1 {
+        color: #FF0000;
+        font-style: oblique;
+        font-weight: 500
+    }
+    #brand p {
+        margin-left: 27%;
+        margin-right: 27%;
+    }
+    #models {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .model {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        border: 7px solid;
+        border-color: red;
+        text-align: center;
+        align-items: center;
+        border-radius: 30px;
+        box-sizing: border-box; 
+    }
+    .model img {
+        width: 350px;
+    }
+    li {
+        list-style: none;
+    }
+    .model ol {
+        padding: 10px 0 0 0;
+    }
+    .model li {
+        width: 300px;
+        padding: 5px 0 0 0;
+    }
+    .model-name {
+        padding: 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: red;
+    }
+    @media screen and (max-width: 650px) {
+    #models {
+        flex-direction: column;
+    }
+    header ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    }
+    h2 {
+        padding: 0 0 10px 0;
+        font-size: 1.8em;
+    }
+    button {
+        margin-bottom: 20px;
+        font-family: sans-serif;
+        font-size: 1.3em; 
+        font-weight: 600;
+        background: red;
+        border: none;
+    }
+    #gear {
+        text-align: center;
+        padding: 50px 0;
+    }
+    #gear h1 {
+        color: red;
+    }
+    #gear a {
+        text-decoration-line: none;
+        color: red;
+    }
+    #newsletter {
+        text-align: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .submit {
+        color: red;
+        border: none;
+    }
+    footer {
+        text-align: center;
+        border-top: 3px solid;
+        border-color: red;
+        margin-right: 0;
+    
+    }
+</style>
+
+
+<!--HTML-->
+<title>Product Landing Page</title>
+
+<body>
+  <main>
+    <div id="all-page">
+      <header id="header">
+        <div class="logo">
+          <img
+            id="header-img"
+            img src="https://i.ibb.co/ySC3Kyh/imgbin-specialized-stumpjumper-specialized-demo-logo-specialized-bicycle-components-brand-ktm-logo-q.png" 
+            alt="Specialized-logo"/>
+        </div>
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#brand">About the brand</a></li>
+            <li><a class="nav-link" href="#models">Models</a></li>
+            <li><a class="nav-link" href="#gear">More from Specialized</a></li>
+       </header>
+       <section id="brand">
+         <h1>MADE FOR RIDERS, BY RIDERS.</h1>
+         <p>Specialized Bicycle Components, Inc., commonly called Specialized, is an American company that designs, manufactures and markets bicycles, bicycle components and related products under the brand name "Specialized". The company was founded in 1974, in California, by Mike Sinyard.</p>
+         <iframe 
+           id="video"
+           width="560" 
+           height="315" 
+           src="https://www.youtube.com/embed/ytZqJATAjMg" 
+           frameborder="0" 
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+           allowfullscreen></iframe>
+          </section>
+          <section id="models">
+            <div id="mtb" class="model">
+              <div class="model-name">S-Works Epic</div>
+              <img
+                 class="product-img"
+                 id="epic"
+                 src="https://i.ibb.co/xY8K0F3/S-Works-Epic-RED-2.jpg"
+                 alt="bike-image"/>
+              <ol>
+                <li>Perfect for Moutain Bike</li><br>
+                <li>Carbon-made body</li><br>
+                <li>Suspension made for confort in hard ground</li>
+              </ol>
+              <h2>$11,500</h2>
+              <button class="btn">SELECT</button>
+            </div>
+            <div id="road" class="model">
+              <div class="model-name">S-Works Tarmac SL7 Pro</div>
+              <img
+                 class="product-img"
+                 id="tarmac"
+                 src="https://i.ibb.co/0K1kqQz/tarmac.jpg"
+                 alt="bike-image"/>
+              <ol>
+                <li>Performs in high-speeds and long distances</li><br>
+                <li>Focused on improved aerodinamyc</li><br>
+                <li>Super light weight and comfortable</li>
+              </ol>
+              <h2>$12,300</h2>
+              <button class="btn">SELECT</button>
+            </div>
+            <div id="gravel" class="model">
+              <div class="model-name">S-Works Turbo Creo SL</div>
+              <img
+                 class="product-img"
+                 id="creo"
+                 src="https://i.ibb.co/D5p0bX0/creo.jpg"
+                 alt="bike-image"/>
+              <ol>
+                <li>Suits hard and flat ground</li><br>
+                <li>Designed to reduce the fatigue and improve the speed</li><br>
+                <li>Lightest bike in its class</li>
+              </ol>
+              <h2>$14,250</h2>
+              <button class="btn">SELECT</button>
+            </div>
+         </section>
+         <section id="gear">
+           <h1>Cycling Gear</h1>
+           <p>Specialized not only makes bycicles. If you are interested in other stuff, you can find it <a href="https://www.specialized.com/us/en/shop/equipment/c/equipment" target="_blank">here</a>.</p>
+         </section>
+          <section id="newsletter">
+         <h1>Want to hear from us? Receive our Newsletter!</h1>
+         <form id="form" action="https://www.freecodecamp.com/email-submit">
+           <input 
+             id="email"
+             type="email"
+             name="email"
+             placeholder="Enter your email">
+           <input type="submit" id="submit" value="Submit" class="submit">
+       </section><br>
+         <footer>
+          <span>This pen was created for educational purposes only, as part of the freeCodeCamp learning program. Every product here belongs to Specialized.</span>
+         </footer>
+    </div>
+  </main>
+</body>
