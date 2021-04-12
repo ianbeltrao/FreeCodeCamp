@@ -1,2 +1,2 @@
 # FreeCodeCamp
-All the projects from freecodecamp.org
+All my projects from freecodecamp.org
