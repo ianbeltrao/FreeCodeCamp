@@ -21,16 +21,21 @@ class Hat:
         return all_removed
 
 def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
-    count = 0
-    for i in range(num_experiments):
-        hat_copy = copy.copy(hat)
-        sample = hat_copy.draw(num_balls_drawn)
-        ok = True
-        for key in expected_balls.keys():
-            if sample.count(key) < expected_balls[key]:
-                ok = False
-                break
-        if ok:
-            count += 1
-    return count / num_experiments
-        
+  
+  num_desired_results = 0
+
+  for i in range(num_experiments):
+    hat_copy = copy.deepcopy(hat)
+
+    actual = hat_copy.draw(num_balls_drawn)
+    actual_dict = {ball: actual.count(ball) for ball in set(actual)}
+    result = True
+    for key, value in expected_balls.items():
+      if key not in actual_dict or actual_dict[key] < expected_balls[key]:
+        result = False
+        break
+
+    if result:
+      num_desired_results += 1
+
+  return num_desired_results/num_experiments
