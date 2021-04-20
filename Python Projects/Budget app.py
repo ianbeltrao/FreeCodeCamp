@@ -44,7 +44,7 @@ class Category:
             return False
         return True
 
-#This part is a really though one and i dont think we have the knowledge to write this from the FCC Python Course.
+#This part is a really though one and i dont think we have the knowledge to do this from the FCC Python Course.
 #This section has some code that is not mine.
 def create_spend_chart(categories):
   category_names = []
